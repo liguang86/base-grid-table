@@ -1,0 +1,43 @@
+{
+  "name": "@liguang/base-grid-table",
+  "version": "0.1.0",
+  "description": "自适应列宽Table组件，支持自定义行、自定义单元格。暂不支持合并单元格。使用自定义组件时，要使用compile版本的Vue。",
+  "private": false,
+  "keyword": "base-grid-table",
+  "author": "liguang86@qq.com",
+  "license": "MIT",
+  "main": "packages/base-grid-table/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liguang86/base-grid-table.git"
+  },
+  "homepage": "https://liguang86.github.io/base-grid-table",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name base-grid-table --dest lib packages/index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@liguang/common-utils": "^0.1.0",
+    "core-js": "^3.4.3",
+    "lodash": "^4.17.15",
+    "resize-observer-polyfill": "^1.5.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.1.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
